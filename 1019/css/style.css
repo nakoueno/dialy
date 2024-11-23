@@ -1,0 +1,470 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
+.scroll_down{
+    position:absolute;
+    bottom: 0px;
+    left: 5%;
+}
+
+.scroll_down a{
+    position: absolute;
+    left: 10px;
+    bottom: 87px;
+    color: #FF66CC;
+    font-size: 13px;
+    /* font-family: 'Josefin Sans', sans-serif; */
+    letter-spacing: .2em;
+    writing-mode: vertical-lr;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.scroll_down:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -4px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background:#FF66CC;
+    animation:
+    circlemove 2s ease-in-out infinite,
+    cirlemovehide 2s ease-out infinite;
+}
+
+@keyframes circlemove{
+    0%{bottom:160px;}
+    100%{bottom:0px;}
+}
+
+@keyframes cirlemovehide{
+    0%{opacity:0}
+    50%{opacity:1;}
+    80%{opacity:0.9;}
+    100%{opacity:0;}
+}
+
+.scroll_down:after{
+    content:"";
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:2px;
+    height: 160px;
+    background:#FF66CC;
+}
+
+
+body{
+    overflow-x: hidden;
+}
+
+#top{
+    max-width: 1100px;
+    margin: 20px auto;
+}
+img{
+    width: 100%;
+}
+h2{
+    margin: 50px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 180%;
+}
+
+#lunch{
+    max-width: 1100px;
+    margin: 20% auto;
+    text-align: center;
+}
+.lunch{
+    position: relative;
+    margin-bottom: 140px;
+}
+.lunch_1{
+    width: 55%;
+}
+.logo1{
+    position: absolute;
+    top: -17%;
+    left: 15.4%;
+    width: 53%;
+}
+.logo2{
+    position: absolute;
+    right: 15.4%;
+    bottom: -12%;
+    width: 30%;
+}
+
+.lunch__1__sp{
+    display: none;
+}
+.lunch__1{
+    margin:0 10px 0px 10px;
+    width: auto;
+    height: 1600px;
+    position: relative;
+    background-color: #aed3cc;
+}
+.lunch_2{
+    position: absolute;
+    top: 10px;
+    right: -50px;
+    width: 55%;
+}
+.lunch_3{
+    position: absolute;
+    top: 26%;
+    left: -70px;
+    width: 69%;
+}
+.lunch_4{
+    position: absolute;
+    top: 59%;
+    right: -70px;
+    width: 66%;
+}
+p{
+    font-size: 15px;
+    line-height: 230%;
+}
+.lunch_text1{
+    position: absolute;
+    text-align: left;
+    top: 8%;
+    left: 50px;
+}
+.lunch_text2{
+    position: absolute;
+    text-align: right;
+    top: 40%;
+    right: 50px;
+}
+.lunch_text3{
+    position: absolute;
+    text-align: left;
+    top: 77%;
+    left: 50px;
+}
+
+@media screen and (max-width:980px){
+    .lunch__1{
+        height: 1400px;
+    }
+    .lunch_text1 , .lunch_text3{
+        left: 20px;
+    }
+    .lunch_text2{
+        right: 20px;
+    }
+}
+
+/* ここからSP表示 */
+@media screen and (max-width:920px){
+    .lunch__1{
+        display: none;
+    }
+    .lunch__1__sp{
+        display: block;
+    }
+}
+.lunch__1__sp{
+    /* margin:0 10px 0px 10px; */
+    width: auto;
+    height: 1950px;
+    background-color: #aed3cc;
+    position: relative;
+}
+.lunch_2__sp, .lunch_3__sp, .lunch_4__sp{
+    margin: 5%;
+    width: 90%;
+    border-radius: 20px;
+}
+p{
+    font-size: 15px;
+    line-height: 230%;
+}
+.lunch_text1__sp, .lunch_text3__sp{
+    text-align: left;
+    margin: 0 0 0 5%;
+}
+.lunch_text2__sp{
+    text-align: right;
+    margin: 0 6% 0 0;
+}
+/* ここまでSP表示 */
+
+.lunch__2__sp{
+    display: none;
+}
+.lunch__2{
+    margin:60px 10px 0px 10px;
+    width: auto;
+    height: 230px;
+    position: relative;
+    border: 4px solid #aed3cc;
+}
+.lunch__2 p{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 60px;
+    text-align: left;
+    line-height: 180%;
+}
+.logo3{
+    position: absolute;
+    right: -5px;
+    bottom: -11.5%;
+    width: 39%;
+}
+.instagram{
+    width: 22px;
+    margin-right: 10px;
+}
+.link1{
+    position: absolute;
+    top: 22%;
+    right: 60px;
+}
+.link2{
+    position: absolute;
+    top: 37%;
+    right: 60px;
+}
+
+/* ここからSP版 */
+@media screen and (max-width:830px){
+    .lunch__1__sp{
+        height: 1800px;
+    }
+    .lunch__2{
+        display: none;
+    }
+    .lunch__2__sp{
+        display: block;
+    }
+    .lunch__2__sp{
+        margin:40px 10px 0 10px;
+        width: auto;
+        height: 230px;
+        position: relative;
+        border: 4px solid #aed3cc;
+    }
+    .lunch__2__sp p{
+        padding: 4.3% 0 0 60px;
+        text-align: left;
+        line-height: 180%;
+    }
+    .instagram{
+        width: 22px;
+        margin-right: 10px;
+    }
+    .lunch_2_link{
+        text-align: left;
+        padding: 1% 0 0 60px;
+    }
+}
+@media screen and (max-width:790px){
+    .lunch__1__sp{
+        height: 1720px;
+    }
+}
+@media screen and (max-width:690px){
+    .lunch__1__sp{
+        height: 1600px;
+    }
+    .lunch__2__sp{
+        margin:40px 10px 0 10px;
+        width: auto;
+        height: 300px;
+        position: relative;
+        border: 4px solid #aed3cc;
+    }
+}
+/* ここまでSP版 */
+
+#exhibition{
+    /* margin-top: 25%; */
+    margin: 0 auto;
+    max-width: 1100px;
+}
+.exhibition{
+    max-width: 900px;
+    margin: 0 auto;
+    /* text-align: center; */
+    position: relative;
+}
+.haniwa__1{
+    max-width: 900px;
+    display: flex;
+    text-align: center;
+    gap: 1.25%;
+    margin: 1.2% auto;
+}
+.haniwa__1 img{
+    width: 32.5%;
+}
+.h_logo1{
+    position: absolute;
+    text-align: left;
+    top: -11%;
+    width: 40%;
+}
+.h_logo2{
+    position: absolute;
+    text-align: right;
+    right: 0%;
+    bottom: -7.5%;
+    width: 46.5%;
+}
+.haniwa_text{
+    margin: 140px auto 0 auto;
+}
+
+.haniwa__3__sp{
+    display: none;
+}
+.haniwa__3{
+    margin: 60px 10px 0 10px;
+    width: auto;
+    height: 230px;
+    position: relative;
+    border: 4px solid #aed3cc;
+}
+.haniwa__3 p{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 60px;
+    text-align: left;
+    line-height: 180%;
+}
+.h_logo3{
+    position: absolute;
+    right: 0px;
+    bottom: -11.5%;
+    width: 26%;
+}
+.instagram{
+    width: 22px;
+    margin-right: 10px;
+}
+.link1{
+    position: absolute;
+    top: 22%;
+    right: 60px;
+}
+.link2{
+    position: absolute;
+    top: 37%;
+    right: 60px;
+}
+
+.haniwa__4 {
+    text-align: center;
+    margin-top: 70px;
+}
+.haniwa__4 img {
+    animation: rotation 13s linear infinite;
+    width: 36%;
+}
+/* アニメーション */
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+    @media screen and (max-width:980px){
+    .logo3,.h_logo3{
+        bottom: -10%;
+    }
+}
+@media screen and (max-width:835px){
+    .logo3,.h_logo3{
+        bottom: -8.5%;
+    }
+}
+
+/* ここからSP版 */
+@media screen and (max-width:830px){
+    .haniwa__3{
+        display: none;
+    }
+    .haniwa__3__sp{
+        display: block;
+    }
+    .haniwa__3__sp{
+        margin:60px 10px 0px 10px;
+        width: auto;
+        height: 230px;
+        position: relative;
+        border: 4px solid #aed3cc;
+    }
+    .haniwa__3__sp p{
+        padding: 6% 0 0 60px;
+        text-align: left;
+        line-height: 180%;
+    }
+    .instagram{
+        width: 22px;
+        margin-right: 10px;
+    }
+    .haniwa__3_link{
+        text-align: left;
+        padding: 1% 0 0 60px;
+    }
+}
+.haniwa__4 img {
+    animation: rotation 13s linear infinite;
+    width: 50%;
+}
+/* ここまでSP版 */
+
+
+/* topへ戻るボタン */
+#page_top{
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    right: 0;
+    bottom: -50px;
+    right: 50px;
+    background: #FF66CC;
+    opacity: 0.6;
+    border-radius: 50%;
+}
+#page_top a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+}
+#page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 600;
+    content: '\f102';
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -39px;
+    bottom: 0;
+    right: 0;
+    left: 15px;
+    margin: auto;
+    text-align: center;
+}
+
