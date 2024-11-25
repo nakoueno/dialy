@@ -432,6 +432,84 @@ p{
 /* ここまでSP版 */
 
 
+#ending{
+    max-width: 1100px;
+    margin: 20% auto 10% auto;
+    text-align: center;
+}
+.shopping{
+    margin:0 10px 0px 10px;
+    width: auto;
+    height: 500px;
+    position: relative;
+    background-color: #EFD8E8;
+}
+.ending_1{
+    position: absolute;
+    top: -15%;
+    right: 15%;
+    width: 70%;
+}
+.ending_2{
+    position: absolute;
+    top: 3%;
+    left: 0%;
+    width: 32%;
+}
+.ending_3{
+    position: absolute;
+    top: 2%;
+    right: -7%;
+    width: 45%;
+}
+.ending_text1{
+    position: absolute;
+    top: 21%;
+    right: 15%;
+    text-align: left;
+    line-height: 180%;
+}
+.ending_text2{
+    position: absolute;
+    top: 67%;
+    right: 27%;
+    text-align: right;
+    line-height: 180%;
+}
+.outfit{
+    margin:200px 10px 0px 10px;
+    width: auto;
+    height: 500px;
+    position: relative;
+    background-color: #EFD8E8;
+}
+.ending_4{
+    position: absolute;
+    top: -15%;
+    right: 20%;
+    width: 58%;
+}
+.ending_text3{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15%;
+    text-align: left;
+    line-height: 300%;
+}
+
+
+#logo{
+    max-width: 1100px;
+    margin: 5% auto;
+    text-align: center;
+}
+#logo img{
+    width: 20%;
+}
+
+
+
 /* topへ戻るボタン */
 #page_top{
     width: 70px;
