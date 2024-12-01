@@ -84,6 +84,9 @@ img{
 
 
 @media screen and (max-width:428px) {
+    .scroll_down{
+        display: none;
+    }
     #top{
         display: none;
     }
@@ -488,9 +491,10 @@ p{
     margin: 20% auto 10% auto;
     text-align: center;
 }
-.shopping_sp{
+.shopping_sp, .shopping_sp_2{
     display: none;
 }
+
 .shopping{
     margin:0 10px 0px 10px;
     width: auto;
@@ -542,10 +546,7 @@ p{
     }
 }
 @media screen and (max-width:920px) {
-    .shopping{
-        display: none;
-    }
-    .shopping_sp_2{
+    .shopping, .shopping_sp_2{
         display: none;
     }
     .shopping_sp{
@@ -718,4 +719,3 @@ p{
     margin: auto;
     text-align: center;
 }
-
