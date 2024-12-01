@@ -412,7 +412,7 @@ p{
 }
 .haniwa__4 img {
     animation: rotation 13s linear infinite;
-    width: 36%;
+    width: 50%;
 }
 /* アニメーション */
 @keyframes rotation {
@@ -464,10 +464,10 @@ p{
         text-align: left;
         padding: 1% 0 0 60px;
     }
-}
-.haniwa__4 img {
+    /* .haniwa__4 img {
     animation: rotation 13s linear infinite;
     width: 50%;
+} */
 }
 
 @media screen and (max-width:428px){
@@ -480,6 +480,11 @@ p{
         font-size: 15px;
         line-height: 180%;
         margin: 15% 5%;
+    }
+    .haniwa__4 img {
+        animation: rotation 13s linear infinite;
+        width: 80%;
+        margin: 0 0 10% 0;
     }
 }
 
@@ -635,41 +640,47 @@ p{
 .outfit{
     margin:200px 10px 0px 10px;
     width: auto;
-    height: 600px;
+    height: 400px;
     position: relative;
     background-color: #EFD8E8;
 }
 .outfit_1{
     position: absolute;
-    top: -15%;
+    top: -20%;
     right: 20%;
     width: 58%;
 }
 .outfit_2{
     position: absolute;
-    top: 42%;
-    left: 13%;
-    width: 20%;
+    top: 24%;
+    left: 8%;
+    width: 18%;
 }
 .outfit_3{
     position: absolute;
-    top: 14%;
-    left: 40%;
+    top: 28%;
+    left: 26%;
     width: 17%;
 }
 .outfit_4{
     position: absolute;
-    top: 38%;
-    left: 34%;
-    width: 18%;
+    top: 25%;
+    left: 44%;
+    width: 12%;
+}
+.outfit_5{
+    position: absolute;
+    top: 28%;
+    left: 52%;
+    width: 14%;
 }
 .ending_text3{
     position: absolute;
-    top: 50%;
+    top: 55%;
     transform: translateY(-50%);
-    right: 15%;
+    right: 9%;
     text-align: left;
-    line-height: 300%;
+    line-height: 270%;
 }
 
 
